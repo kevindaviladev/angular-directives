@@ -7,9 +7,10 @@ import { RouterModule } from '@angular/router';
 import { AtributeComponent } from './directivas/atributo/atribute/atribute.component';
 import { EstructuralesComponent } from './directivas/estructurales/estructurales/estructurales.component';
 import { AppRoutingModule } from './app.routing.module';
+import { MostrarsiDirective } from './mostrarsi.directive';
 
 @NgModule({
-  declarations: [AppComponent, AtributeComponent, EstructuralesComponent],
+  declarations: [AppComponent, AtributeComponent, EstructuralesComponent, MostrarsiDirective],
   imports: [
     BrowserModule,
     ClipboardModule,
