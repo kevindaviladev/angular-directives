@@ -1,0 +1,35 @@
+<!-- NgIf -->
+<h2>NgIf</h2>
+<div *ngIf="canRead">
+  <p>Esto es un parrafo</p>
+</div>
+
+<button (click)="toggleRead()">toggleRead</button>
+
+<hr>
+<!-- NgFor -->
+<h2>NgFor</h2>
+<ul>
+  <li *ngFor="let item of list">
+    {{ item }}
+</li>
+</ul>
+
+<ol>
+  <li *ngFor="let item of videos">
+    {{ item.name }}
+  </li>
+</ol>
+
+<hr>
+<!-- NgTemplateOutlet -->
+
+<h2>NgTemplateOutlet</h2>
+
+<ng-template #template>
+  <p>Esto es un template con un parrafo</p>
+</ng-template>
+
+<!-- <ng-container *ngTemplateOutlet="template"></ng-container> -->
+
+<!-- Custom directive -->

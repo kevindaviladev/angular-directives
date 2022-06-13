@@ -4,15 +4,19 @@ import { AppComponent } from './app.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AtributeComponent } from './directivas/atributo/atribute/atribute.component';
+import { EstructuralesComponent } from './directivas/estructurales/estructurales/estructurales.component';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AtributeComponent, EstructuralesComponent],
   imports: [
     BrowserModule,
     ClipboardModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
