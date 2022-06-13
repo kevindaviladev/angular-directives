@@ -1,0 +1,28 @@
+<!-- NgClass -->
+
+<h2>NgClass</h2>
+
+<p [ngClass]="{ warning: isWarning }">Mensaje importante!</p>
+
+<hr>
+<!-- NgStyle -->
+<h2>NgStyle</h2>
+
+<p [ngStyle]="{'text-transform': 'uppercase', 'color': 'red'}">debe ser uppercase</p>
+
+<!-- Alternativa a ngStyle -->
+<p [style.background-color]="'red'">Wow</p>
+
+<button
+  [ngStyle]="{'opacity': isLoading ? '0.5' : '1' }"
+  (click)="toggleLoading()">
+  Enviar
+</button>
+
+<!-- NgModel -->
+<h2>ngModel</h2>
+
+<input
+  type="text"
+  [(ngModel)]="name">
+{{ name }}

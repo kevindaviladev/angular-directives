@@ -1,14 +1,4 @@
-<form [formGroup]="form">
-  <label for="">Name</label>
-  <input type="text" formControlName="name" />
+<button [routerLink]="'./atributo'">Atributo</button>
+<button [routerLink]="'./estructurales'">Estructurales</button>
 
-  <label for="">Edad</label>
-  <input type="text" formControlName="age" />
-
-  <button (click)="filter()">Filtrar</button>
-</form>
-
-<!-- {{ form.value | json }} -->
-
-<app-report1></app-report1>
-<!-- <app-report2></app-report2> -->
+<router-outlet></router-outlet>

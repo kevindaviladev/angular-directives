@@ -1,25 +1,30 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { Report1Component } from './report1/report1.component';
-import { Report2Component } from './report2/report2.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AtributeComponent } from './directivas/atributo/atribute/atribute.component';
+import { EstructuralesComponent } from './directivas/estructurales/estructurales/estructurales.component';
+import { AppRoutingModule } from './app.routing.module';
+import { MostrarsiDirective } from './mostrarsi.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Report1Component,
-    Report2Component
+    AtributeComponent,
+    EstructuralesComponent,
+    MostrarsiDirective,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    ClipboardModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
